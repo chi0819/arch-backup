@@ -9,8 +9,8 @@
 :set mouse=a
 :set path+=/usr/local/include/
 
-:autocmd filetype c nnoremap <Space>c :w <bar> exec '!gcc '.shellescape('%').' -o '.shellescape('%:r').' && ./'.shellescape('%:r')<CR>
-:autocmd filetype cpp nnoremap <Space>c :w <bar> !g++ -std=c++14 % -o %:r && :!%:r<CR>
+autocmd filetype c nnoremap <Space>c :w <bar> exec '!gcc '.shellescape('%').' -o '.shellescape('%:r').' && ./'.shellescape('%:r')<CR>
+autocmd filetype cpp nnoremap <Space>c :w <bar> exec '!g++ '.shellescape('%').' -o '.shellescape('%:r').' && ./'.shellescape('%:r')<CR>
 
 call plug#begin()
 
