@@ -4,7 +4,7 @@
 
 # Terminal shortcut
 alias c='clear'
-alias sb='source .bashrc'
+alias sb='source ~/.bashrc'
 alias ls='exa -al'
 alias pac='sudo pacman -S'
 alias v='nvim'
@@ -25,7 +25,7 @@ alias dot="cd ~/dotfiles"
 
 # Scripts shortcut
 alias ph="~/set/script/git_push.sh"
-alias e='~/set/script/compile_run_cpp.sh'
+alias e='~/set/script/compile_run.sh'
 
 # -----------------------------------------------------
 # GIT
