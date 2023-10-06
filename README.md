@@ -7,8 +7,8 @@ The files include all of the setting writed by myself, so this repo is important
 
 ## Some notes for recording my learning path.
 
-(Arch Linux & Hyprland Desktop Installation)[https://hackmd.io/PpbubeaHQ5KgQg_rA8QJwQ]
+[Arch Linux & Hyprland Desktop Installation](https://hackmd.io/PpbubeaHQ5KgQg_rA8QJwQ)
 
-(Useful vim/nvim plug)[https://hackmd.io/qJbW7TC9QN22Pj-K8zZw0w]
+[Useful vim/nvim plug](https://hackmd.io/qJbW7TC9QN22Pj-K8zZw0w)
 
-(Useful system plug)[https://hackmd.io/sVLVdj-fQmy4QAW6P4JofA]
+[Useful system plug](https://hackmd.io/sVLVdj-fQmy4QAW6P4JofA)
