@@ -22,6 +22,7 @@ alias ppy='cd ~/code/py/'
 alias prs='cd ~/code/rs/'
 alias sset='cd ~/set/'
 alias dot="cd ~/dotfiles"
+alias st='cd ~/set/script/'
 
 # Scripts shortcut
 alias ph="~/set/script/git_push.sh"
