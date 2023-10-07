@@ -23,6 +23,7 @@ elif [[ ${interpreter} -eq 0 ]]; then
 	printf "Compile finished and run\n"
 	printf "Enter your test data: \n\n"
 	./"${1}"
+	rm "${1}"
 elif [[ $? -ne 0 ]]; then
 	printf "Something error \n"
 fi
