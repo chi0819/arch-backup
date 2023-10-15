@@ -9,9 +9,6 @@
 :set mouse=a
 :set path+=/usr/local/include/
 
-autocmd filetype c nnoremap <Space>c :w <bar> exec '!gcc '.shellescape('%').' -o '.shellescape('%:r').' && ./'.shellescape('%:r')<CR>
-autocmd filetype cpp nnoremap <Space>c :w <bar> exec '!g++ '.shellescape('%').' -o '.shellescape('%:r').' && ./'.shellescape('%:r')<CR>
-
 call plug#begin()
 
 Plug 'jiangmiao/auto-pairs'
@@ -25,6 +22,20 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 set encoding=UTF-8
 
 call plug#end()
+
+inoremap <silent><expr> <TAB>
+      \ coc#pum#visible() ? coc#pum#next(1) :
+      \ CheckBackspace() ? "\<Tab>" :
+      \ coc#refresh()
+inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
+
+inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
+                              \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+
+function! CheckBackspace() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
 
 nnoremap <Space>v <C-w>v <CR> " split window vertically
 nnoremap <Space>b <C-w>s <CR> " split window horizontally

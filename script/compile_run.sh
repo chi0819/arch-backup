@@ -9,8 +9,6 @@ if [[ "${filetype}" == "cpp" ]]; then
 	g++ -o "${1}" "${1}.${filetype}"
 elif [[ "${filetype}" == "c" ]]; then
 	gcc -o "${1}" "${1}.${filetype}"
-elif [[ "${filetype}" == "rs" ]]; then
-	rustc "${1}.${filetype}"
 elif [[ "${filetype}" == "py" ]]; then
 	python "${1}.${filetype}"
 	interpreter=1
