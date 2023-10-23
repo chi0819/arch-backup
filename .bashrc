@@ -16,6 +16,7 @@ alias ins='sudo pacman -S'
 alias car='cargo run'
 alias dp='sudo ~/debtap/debtap'
 alias un='sudo pacman -R'
+alias del='sudo rm -rf'
 alias audio='~/pulsemixer'
 alias on='xdg-open'
 
@@ -23,11 +24,11 @@ alias on='xdg-open'
 alias hrc='v ~/dotfiles/hypr/hyprland.conf'
 alias bc='v ~/.bashrc'
 alias plab='cd ~/lab'
-alias linux='cd ~/code/linux/'
+alias linux='cd ~/system/linux/'
 alias pc='cd ~/code/c/'
 alias pcpp='cd ~/code/cpp/'
 alias ppy='cd ~/code/py/'
-alias prs='cd ~/code/rs/'
+alias prs='cd ~/system/rs/'
 alias sset='cd ~/set/'
 alias dot="cd ~/dotfiles"
 alias st='cd ~/set/script/'
@@ -35,7 +36,7 @@ alias gdsc='cd ~/code/gdsc'
 alias res='cd ~/research'
 
 # Scripts shortcut
-alias quartus='/home/eric/intelFPGA_lite/22.1std/quartus/bin/quartus'
+alias quartus='/home/eric/intelFPGA_lite/18.1/quartus/bin/quartus'
 alias ph='~/set/script/git_push.sh'
 alias e='~/set/script/compile_run.sh'
 alias t='~/set/script/test.sh'
@@ -73,3 +74,5 @@ cat ~/.cache/wal/sequences
 echo ""
 neofetch
 audio --mute
+
+export QSYS_ROOTDIR="/home/eric/intelFPGA_lite/19.1/quartus/sopc_builder/bin"
